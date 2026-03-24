@@ -6,8 +6,7 @@
 :root {
     --dark: #0369a1;        
     --light: #f0f9ff;       
-    --doubleDark: #212529; 
-    --accent: #0dcaf0; 
+    --doubleDark: #212529;  
 }
 
 body {
@@ -137,11 +136,9 @@ body {
     color: var(--light);
 }
 /* END Contact */
-
 /* Start Footer */
-/* FOOTER OPSI 1 - BIG BRANDING */
 .footer-branding {
-    background-color: var(--doubleDark); /* Menggunakan biru paling gelap */
+    background-color: var(--doubleDark); 
     color: var(--light);
     padding: 60px 0 30px 0;
     position: relative;
@@ -150,14 +147,13 @@ body {
 
 /* Mengatur Nama Brand */
 .footer-branding h2 {
-    font-family: 'Bebas Neue', sans-serif; /* Senada dengan font judul utama */
+    font-family: 'Bebas Neue', sans-serif; 
     font-size: 2.5rem;
     letter-spacing: 2px;
     color: #ffffff;
     margin-bottom: 5px;
 }
 
-/* Mengatur Teks Sub-judul (Job Title) */
 .footer-branding .job-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
@@ -167,7 +163,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Mengatur Link Navigasi */
 .footer-branding .nav-link {
     color: var(--light) !important;
     font-size: 1rem;
@@ -176,14 +171,13 @@ body {
     position: relative;
 }
 
-/* Efek Hover Navigasi (Garis Bawah) */
 .footer-branding .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
     bottom: 0;
-    left: 15px; /* Menyesuaikan padding horizontal px-3 */
+    left: 15px; 
     background-color: #ffffff;
     transition: width 0.3s ease;
 }
@@ -197,19 +191,38 @@ body {
     width: calc(100% - 30px);
 }
 
-/* Garis Pemisah (Divider) */
 .footer-branding hr {
     border-top: 1px solid var(--light);
     opacity: 0.15;
 }
 
-/* Teks Copyright */
 .footer-branding .copyright {
     font-size: 0.8rem;
     opacity: 0.6;
     letter-spacing: 0.5px;
 }
-/* END FOOTER */
+/* END Footer */
+
+/* Start DarkMode */
+body.dark-theme {
+    background-color: #121212 !important;
+    color: #f8f9fa !important;
+}
+body.dark-theme .about, 
+body.dark-theme .contact, 
+body.dark-theme .encryptor {
+    background-color: #1a1a1a !important;
+    color: #f8f9fa !important;
+}
+body.dark-theme .card {
+    background-color: #2d2d2d !important;
+    color: #f8f9fa !important;
+    border: 1px solid #444;
+}
+body.dark-theme svg path {
+    fill: #1a1a1a !important; /* Menyesuaikan warna gelombang SVG */
+}
+/* End DarkMode */
 
 /* Responsive */
     /* Mobile */
