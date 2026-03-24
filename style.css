@@ -224,6 +224,21 @@ body.dark-theme svg path {
 }
 /* End DarkMode */
 
+/* Start Scroll Reveal */
+/* State Awal Elemen disembunyikan dan ditarik ke bawah */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px); /* Menggeser 50px ke bawah */
+    transition: all 0.8s ease-out; /* Durasi animasi */
+}
+
+/* 2. State Akhir Saat JS menambahkan class .active, elemen akan muncul */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi asli */
+}
+/* End Scroll Reveal */
+
 /* Responsive */
     /* Mobile */
     @media (max-width: 768px) {
